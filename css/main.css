@@ -1,0 +1,157 @@
+body{
+    max-width: 3840px;
+    width: 100%;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+.header_top {
+    background-color: #7AC751;
+    color: #ffffff;
+    font-size: 16px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header_top_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_top_right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_top_right .change_lang,
+.header_top_right .account {
+    padding: 0 20px;
+}
+
+.header_top_right > div:last-child {
+    margin-right: -20px;
+}
+
+/*
+.header_top_right .change_lang::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+}
+*/
+
+.divider {
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.header {
+    margin-top: 20px;
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner .find_container {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 45px;
+    padding-left: 10px;
+    border: 2px #7AC751 solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.find_input {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-right: 2px #E3E3E3 solid;
+}
+
+.find_categories {
+    padding: 0 10px;
+}
+
+.find_categories::after{
+    padding-left: 5px;
+    content: "\02C5";
+}
+
+.find_btn {
+    background-color: #7ac751;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    /*padding: 10px;*/
+}
+
+.header .header_right {
+    display: flex;
+}
+
+.header .header_right > div {
+    margin: 0 10px;
+    height: 26px;
+    width: 26px;
+}
+
+.header .header_right > div:last-child {
+    margin-right: 0;
+}
+
+.nav {
+    margin-top: 20px;
+    background-color: #F7F8FA;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: start;
+    /*table-layout: auto;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*align-items: center;*/
+}
+
+.nav_item {
+    text-align: center;
+    /*display: table-cell;*/
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555555;
+    padding: 25px 50px;
+    list-style: none;
+}
+
+.nav_item:first-child {
+    width: 240px;
+}
+
+.nav_item:hover {
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #7AC751;
+    transition: .3s ease;
+}
+
+#accordion_menu .menu_item {
+    display: none;
+}
+
+
