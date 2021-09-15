@@ -100,6 +100,10 @@ body{
     /*padding: 10px;*/
 }
 
+.find_btn:hover {
+    cursor: pointer;
+}
+
 .header .header_right {
     display: flex;
 }
@@ -114,7 +118,9 @@ body{
     margin-right: 0;
 }
 
+
 .nav {
+    width: 100%;
     margin-top: 20px;
     background-color: #F7F8FA;
 }
@@ -135,23 +141,329 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     color: #555555;
-    padding: 25px 50px;
+    padding: 40px 35px;
     list-style: none;
-}
-
-.nav_item:first-child {
-    width: 240px;
+    transition: .3s ease;
+    font-size: 16px;
 }
 
 .nav_item:hover {
     font-weight: 500;
     color: #ffffff;
     background-color: #7AC751;
+}
+
+
+#accordion_menu{
+    position: relative;
+    display: flex;
+    margin-right: 40px;
+    /*transition: .3s ease;*/
+}
+
+/*#accordion_menu:hover {
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #7AC751;
+    transition: .3s ease;
+}*/
+
+.burger_menu_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 15px;
+}
+
+.burger_top,
+.burger_middle,
+.burger_bottom{
+    content : "";
+    border: 1px #7AC751 solid;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.nav_item:hover .burger_top,
+.nav_item:hover .burger_middle,
+.nav_item:hover .burger_bottom {
+    border-color: #ffffff;
+}
+
+.burger_top {
+    width: 18px;
+}
+
+.burger_middle {
+    width: 12px;
+}
+
+.burger_bottom {
+    width: 6px;
+}
+
+.menu_list {
+    color: #555555;
+    background-color: #F7F8FA;
+    position: absolute;
+    box-sizing: border-box;
+    list-style: none;
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    display: none;
+    /*width: 220px;*/
+}
+
+#accordion_menu:hover .menu_list {
+    display: table-cell;
+}
+
+.menu_item {
+    padding: 10px 0 10px 30px;
+    border-bottom: 1px #E3E3E3 solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_item:last-child {
+    border: none;
+}
+
+.menu_item:hover {
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #7AC751;
     transition: .3s ease;
 }
 
-#accordion_menu .menu_item {
-    display: none;
+.ad_slider_inner {
+
 }
 
+.slider_list {
+    margin-left: 2px;
+}
+
+.slider_item {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #F1FAFF88;
+    /*position: relative;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.slider_item .category {
+    text-transform: uppercase;
+    color: #7ac751;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.slider_item .title {
+    margin-top: 6px;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 500;
+    color: #2f2f2f;
+}
+
+.slider_item .description {
+    margin-top: 30px;
+    font-family: Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    color: #51515171;
+}
+
+.slider_item .buy_btn {
+    margin-top: 35px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #7AC751;
+    padding: 10px 20px;
+}
+
+.slider_item .products {
+    display: flex;
+}
+
+.slider_item .more_products_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider_item .more_product_item {
+    padding: 5px 20px;
+    border: 2px #ffffff solid;
+    border-radius: 8px;
+    background-color: #ffffff60;
+    text-align: center;
+    width: 100px;
+}
+
+.slider_item .more_product_item img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.slider_item .product_cost {
+    color: #7ac751;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.slider_item .product_cost:before {
+    content: "$";
+    font-size: 7px;
+}
+
+.slider_item .product_name {
+    font-weight: 500;
+    font-size: 7px;
+    text-transform: capitalize;
+    color: #555555;
+}
+
+
+.features {
+    margin-top: 65px;
+}
+
+.features_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature_item {
+    display: flex;
+    align-items: center;
+}
+
+.feature_logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.feature_content {
+    margin-left: 15px;
+    text-align: left;
+}
+
+.feature_title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #555555;
+}
+
+.feature_description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #51515171;
+}
+
+.offers {
+    margin-top: 70px;
+}
+
+.offers_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-family: Mulish, sans-serif;
+}
+.offer_main,
+.offer_separated {
+    width: 50%;
+}
+
+.offer_separated_list {
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+#offer_separated_last_item {
+    margin-top: 20px;
+}
+
+.offer_separated_item {
+    height: 50%;
+}
+
+.offer_back {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    padding: 25px 50px;
+    height: 100%;
+}
+
+#offer_main {
+    background-image: url("../img/offer_main.png");
+}
+#offer_more1 {
+    background-image: url("../img/offer_more1.png");
+}
+#offer_more2 {
+    background-image: url("../img/offer_more2.png");
+}
+
+.offer_title {
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: capitalize;
+    line-height: 26px;
+    color: #555555;
+}
+
+.offer_cost {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #7ac751;
+}
+
+.offer_cost p{
+    display: inline;
+}
+
+.extra_bold {
+    font-weight: 900;
+}
+
+.offer_read_more_btn {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #757575;
+    line-height: 26px;
+    border: none;
+    background-color: transparent;
+}
 

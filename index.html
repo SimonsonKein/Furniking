@@ -54,8 +54,14 @@
     <div class="container">
       <div class="nav_inner">
         <ul class="nav_list">
-          <li class="nav_item" id="accordion_menu"> All collections
-            <ul class="menu_list">
+          <li class="nav_item" id="accordion_menu">
+            <div class="burger_menu_icon">
+              <div class="burger_top"></div>
+              <div class="burger_middle"></div>
+              <div class="burger_bottom"></div>
+            </div>
+            All collections
+            <ul class="menu_list active">
               <li class="menu_item">All</li>
               <li class="menu_item">New Arrivals</li>
               <li class="menu_item">Hot Sale</li>
@@ -74,25 +80,33 @@
 
   <div class="ad_slider">
     <div class="container">
-      <div class="ad_slider_inner">
+      <div class="ad_slider_inner" id="slider">
         <ul class="slider_list">
           <li class="slider_item">
             <div class="content">
-              <div class="category"></div>
-              <div class="title"></div>
-              <div class="description"></div>
-              <div class="buy_btn"></div>
+              <div class="category">TOP COLLECTIONS 2022</div>
+              <div class="title">We Serve Your Dream Furniture</div>
+              <div class="description">Get 50% off all products</div>
+              <button class="buy_btn">SHOP NOW</button>
             </div>
             <div class="products">
               <div class="main_product"><img src="img/furniture_1.png" alt="main_product"></div>
               <ul class="more_products_list">
                 <li class="more_product_item">
                   <img src="img/furniture_2.png" alt="more_product1">
-                  <div class="product_cost"></div>
-                  <div class="product_name"></div>
+                  <div class="product_cost">120</div>
+                  <div class="product_name">Office Desk Chair</div>
                 </li>
-                <li class="more_product_item"><img src="img/furniture_3.png" alt="more_product2"></li>
-                <li class="more_product_item"><img src="img/furniture_4.png" alt="more_product3"></li>
+                <li class="more_product_item">
+                  <img src="img/furniture_3.png" alt="more_product2">
+                  <div class="product_cost">180</div>
+                  <div class="product_name">Home Alisa Sofa</div>
+                </li>
+                <li class="more_product_item">
+                  <img src="img/furniture_4.png" alt="more_product3">
+                  <div class="product_cost">250</div>
+                  <div class="product_name">Modern Chair</div>
+                </li>
               </ul>
             </div>
           </li>
@@ -142,30 +156,45 @@
     <div class="container">
       <div class="offers_inner">
         <div class="offer_main">
-          <img src="img/offer_main.png" alt="offer_main">
-          <div class="offer_title">Modern Furniture Collections</div>
-          <div class="offer_cost">Starting from $500</div>
-          <div class="offer_read_more_btn"><button>Read more</button></div>
+          <div class="offer_back" id="offer_main">
+            <div class="offer_title">Modern Furniture Collections</div>
+            <div class="offer_cost">
+              <p>Starting from </p><p class="extra_bold">$500</p>
+            </div>
+            <button class="offer_read_more_btn">Read more→</button>
+          </div>
+<!--          <img src="img/offer_main.png" alt="offer_main">-->
+
         </div>
         <div class="offer_separated">
           <ul class="offer_separated_list">
             <li class="offer_separated_item">
-              <img src="img/offer_more1.png" alt="offer separated more1">
-              <div class="offer_title">Geometric Bookcase</div>
-              <div class="offer_cost">Up to 20% discount</div>
-              <div class="offer_read_more_btn"><button>Read more</button></div>
+              <div class="offer_back" id="offer_more1">
+                <div class="offer_title">Geometric Bookcase</div>
+                <div class="offer_cost">Up to 20% discount</div>
+                <button class="offer_read_more_btn">Read more→</button>
+              </div>
             </li>
-            <li class="offer_separated_item">
-              <img src="img/offer_more2.png" alt="offer separated more2">
-              <div class="offer_title">Minimal Sofa collections</div>
-              <div class="offer_cost">Sale upto 40% discount</div>
-              <div class="offer_read_more_btn"><button>Read more</button></div>
+            <li class="offer_separated_item" id="offer_separated_last_item">
+              <div class="offer_back" id="offer_more2">
+                <div class="offer_title">Minimal Sofa collections</div>
+                <div class="offer_cost">Sale upto 40% discount</div>
+                <button class="offer_read_more_btn">Read more→</button>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    let accordionMenuWidth = document.getElementById("accordion_menu").offsetWidth;
+    console.log(accordionMenuWidth)
+    document.getElementById("slider").style.marginLeft = (accordionMenuWidth) + "px";
+  </script>
+
+
 </body>
 
 </html>
