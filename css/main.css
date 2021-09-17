@@ -662,7 +662,7 @@ body{
 .special_offer .special_offer_item {
     position: relative;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: auto 100%;
     background-position: center;
     flex-basis: 50%;
 }
@@ -958,7 +958,14 @@ body{
 }
 
 .our_products .pages_list .current_page {
+    padding: 20px 7px;
+    display: flex;
     width: 60px;
+    height: 0;
+    outline: none;
+    border: 1px #cccccc solid;
+    border-radius: 2px;
+    text-align: center;
 }
 
 .our_products .pages_list button {
@@ -973,4 +980,199 @@ body{
     display: inline;
 }
 
+.quotes {
+    margin-top: 120px;
+    font-family: Mulish, sans-serif;
+}
 
+.quotes .title {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #555555;
+}
+
+.quotes .quotes_list {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.quotes .quote_arrow_left,
+.quotes .quote_arrow_right {
+    position: absolute;
+    top: 50%;
+    /*transform: translateY(-50%);*/
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color: #cccccc;
+    transition: .3s ease;
+    border-radius: 50%;
+    padding-top: 2px;
+}
+
+.quotes .quote_arrow_left {
+    left: 0;
+    padding-right: 5px;
+}
+
+.quotes .quote_arrow_right {
+    right: 0;
+    padding-left: 5px;
+}
+
+.quotes .quote_arrow_left:hover,
+.quotes .quote_arrow_right:hover{
+    cursor: pointer;
+    background-color: #7ac751;
+    color: #ffffff;
+}
+
+.quotes .quotes_item {
+    flex-basis: 70%;
+    background-color: #f8fafb;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quotes .quote_photo {
+    background-image: url("../img/quote_photo.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    width: 90px;
+    height: 90px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.quotes .quote_content {
+    width: 70%;
+    text-align: center;
+    font-family: DMSans, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #515151;
+}
+
+.quotes .quote_author {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #555555;
+}
+
+.quotes .quote_job {
+    margin-top: 8px;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #515151;
+}
+
+.articles {
+    margin-top: 115px;
+    font-family: Mulish, sans-serif;
+}
+
+.articles .title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #555555;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.articles .articles_list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.articles .article_item {
+    flex-basis: 49%;
+    height: 460px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    padding: 40px;
+    color: #ffffff;
+}
+
+#article_item1 {
+    background-image: url("../img/article1.png");
+}
+#article_item2 {
+    background-image: url("../img/article2.png");
+}
+#article_item3 {
+    background-image: url("../img/article3.png");
+}
+#article_item4 {
+    background-image: url("../img/article4.png");
+}
+
+.articles .article_info {
+    display: flex;
+    align-items: center;
+}
+
+.articles .article_category {
+    color: #7ac751;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #F8FAFB;
+    text-transform: uppercase;
+    font-family: DMSans, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.articles .article_category:before {
+    font-family:  "Font Awesome 5 Pro", sans-serif;
+    content: "\f02b";
+    margin-right: 5px;
+}
+
+.articles .article_date {
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.articles .article_title {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 1.2;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.articles .article_read_more_btn {
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-family: DMSans, sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+}
