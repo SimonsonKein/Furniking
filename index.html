@@ -10,23 +10,32 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/font_awesome_all.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
 </head>
 
 <body>
-  <section class="header_top">
+<!--  <section class="header_top">
     <div class="container">
       <div class="header_top_inner">
         <div class="header_top_left">
           <div class="welcome">Welcome to our online shop</div>
         </div>
         <div class="header_top_right">
-          <div class="change_lang">English (USD)</div>
+          <div class="lang_change">
+            <div class="current_lang">English (USD)</div>
+            <ul class="lang_list">
+              <li class="lang_item">Русский (RU)</li>
+            </ul>
+          </div>
           <div class="divider"></div>
-          <div class="account">Login or Sign up</div>
+          <div class="account">
+            <button id="login">Login</button> or <button id="sign_up">Sign up</button>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <section class="header">
     <div class="container">
@@ -34,23 +43,33 @@
         <div class="header_left">
           <img src="img/logo.png" alt="logo">
         </div>
-        <div class="header_center">
+
+        <div class="header_center laptop_version">
           <div class="find_container">
             <input class="find_input" type="text" placeholder="Search here">
             <div class="find_categories">Category</div>
               <button class="find_btn"><img src="img/find.png" alt="fing_btn"></button>
           </div>
         </div>
-        <div class="header_right">
+        <div class="header_right laptop_version">
           <div class="shop_car"><img src="img/shop.png" alt="shop_car"></div>
           <div class="notifications"><img src="img/notification.png" alt="notification"></div>
           <div class="my_account"><img src="img/avatar.png" alt="my_account"></div>
+        </div>
+
+        <div class="header_right mobile_version">
+          <button class="find"><i class="far fa-search"></i></button>
+          <div class="find_container">
+            <input class="find_input" type="text" placeholder="Search here">
+            <div class="find_categories">Category</div>
+            <button class="find_btn"><i class="far fa-search"></i></button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="nav">
+<!--  <section class="nav">
     <div class="container">
       <div class="nav_inner">
         <ul class="nav_list">
@@ -76,769 +95,769 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <section class="ad_slider">
-    <div class="container">
-      <div class="ad_slider_inner" id="slider">
-        <ul class="slider_list">
-          <li class="slider_item">
-            <div class="content">
-              <div class="category">TOP COLLECTIONS 2022</div>
-              <div class="title">We Serve Your Dream Furniture</div>
-              <div class="description">Get 50% off all products</div>
-              <button class="buy_btn">SHOP NOW</button>
-            </div>
-            <div class="products">
-              <div class="main_product"><img src="img/furniture_1.png" alt="main_product"></div>
-              <ul class="more_products_list">
-                <li class="more_product_item">
-                  <img src="img/furniture_2.png" alt="more_product1">
-                  <div class="product_cost">120</div>
-                  <div class="product_name">Office Desk Chair</div>
-                </li>
-                <li class="more_product_item">
-                  <img src="img/furniture_3.png" alt="more_product2">
-                  <div class="product_cost">180</div>
-                  <div class="product_name">Home Alisa Sofa</div>
-                </li>
-                <li class="more_product_item">
-                  <img src="img/furniture_4.png" alt="more_product3">
-                  <div class="product_cost">250</div>
-                  <div class="product_name">Modern Chair</div>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!--  <section class="ad_slider">-->
+<!--    <div class="container">-->
+<!--      <div class="ad_slider_inner" id="slider">-->
+<!--        <ul class="slider_list">-->
+<!--          <li class="slider_item">-->
+<!--            <div class="content">-->
+<!--              <div class="category">TOP COLLECTIONS 2022</div>-->
+<!--              <div class="title">We Serve Your Dream Furniture</div>-->
+<!--              <div class="description">Get 50% off all products</div>-->
+<!--              <button class="buy_btn">SHOP NOW</button>-->
+<!--            </div>-->
+<!--            <div class="products">-->
+<!--              <div class="main_product"><img src="img/furniture_1.png" alt="main_product"></div>-->
+<!--              <ul class="more_products_list">-->
+<!--                <li class="more_product_item">-->
+<!--                  <img src="img/furniture_2.png" alt="more_product1">-->
+<!--                  <div class="product_cost">120</div>-->
+<!--                  <div class="product_name">Office Desk Chair</div>-->
+<!--                </li>-->
+<!--                <li class="more_product_item">-->
+<!--                  <img src="img/furniture_3.png" alt="more_product2">-->
+<!--                  <div class="product_cost">180</div>-->
+<!--                  <div class="product_name">Home Alisa Sofa</div>-->
+<!--                </li>-->
+<!--                <li class="more_product_item">-->
+<!--                  <img src="img/furniture_4.png" alt="more_product3">-->
+<!--                  <div class="product_cost">250</div>-->
+<!--                  <div class="product_name">Modern Chair</div>-->
+<!--                </li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="features">
-    <div class="container">
-      <div class="features_inner">
-        <ul class="features_list">
-          <li class="feature_item">
-            <div class="feature_logo"><img src="img/free-delivery1.png" alt="delivery"></div>
-            <div class="feature_content">
-              <div class="feature_title">Free Shipping</div>
-              <div class="feature_description">Olders over $100</div>
-            </div>
-          </li>
-          <li class="feature_item">
-            <div class="feature_logo"><img src="img/gift.png" alt="gift"></div>
-            <div class="feature_content">
-              <div class="feature_title">Smart Gift Card</div>
-              <div class="feature_description">Buy $1000 ti get card</div>
-            </div>
-          </li>
-          <li class="feature_item">
-            <div class="feature_logo"><img src="img/wallet.png" alt="wallet"></div>
-            <div class="feature_content">
-              <div class="feature_title">Quick Payment</div>
-              <div class="feature_description">100% secure payment</div>
-            </div>
-          </li>
-          <li class="feature_item">
-            <div class="feature_logo"><img src="img/support.png" alt="support"></div>
-            <div class="feature_content">
-              <div class="feature_title">24/7 Support</div>
-              <div class="feature_description">Quick Support</div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!--  <section class="features">-->
+<!--    <div class="container">-->
+<!--      <div class="features_inner">-->
+<!--        <ul class="features_list">-->
+<!--          <li class="feature_item">-->
+<!--            <div class="feature_logo"><img src="img/free-delivery1.png" alt="delivery"></div>-->
+<!--            <div class="feature_content">-->
+<!--              <div class="feature_title">Free Shipping</div>-->
+<!--              <div class="feature_description">Olders over $100</div>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="feature_item">-->
+<!--            <div class="feature_logo"><img src="img/gift.png" alt="gift"></div>-->
+<!--            <div class="feature_content">-->
+<!--              <div class="feature_title">Smart Gift Card</div>-->
+<!--              <div class="feature_description">Buy $1000 ti get card</div>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="feature_item">-->
+<!--            <div class="feature_logo"><img src="img/wallet.png" alt="wallet"></div>-->
+<!--            <div class="feature_content">-->
+<!--              <div class="feature_title">Quick Payment</div>-->
+<!--              <div class="feature_description">100% secure payment</div>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="feature_item">-->
+<!--            <div class="feature_logo"><img src="img/support.png" alt="support"></div>-->
+<!--            <div class="feature_content">-->
+<!--              <div class="feature_title">24/7 Support</div>-->
+<!--              <div class="feature_description">Quick Support</div>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="offers">
-    <div class="container">
-      <div class="offers_inner">
-        <div class="offer_main">
-          <div class="offer_back" id="offer_main">
-            <div class="offer_title">Modern Furniture Collections</div>
-            <div class="offer_cost">
-              <p>Starting from </p><p class="extra_bold">$500</p>
-            </div>
-            <button class="offer_read_more_btn">Read more→</button>
-          </div>
-<!--          <img src="img/offer_main.png" alt="offer_main">-->
+<!--  <section class="offers">-->
+<!--    <div class="container">-->
+<!--      <div class="offers_inner">-->
+<!--        <div class="offer_main">-->
+<!--          <div class="offer_back" id="offer_main">-->
+<!--            <div class="offer_title">Modern Furniture Collections</div>-->
+<!--            <div class="offer_cost">-->
+<!--              <p>Starting from </p><p class="extra_bold">$500</p>-->
+<!--            </div>-->
+<!--            <button class="offer_read_more_btn">Read more→</button>-->
+<!--          </div>-->
+<!--&lt;!&ndash;          <img src="img/offer_main.png" alt="offer_main">&ndash;&gt;-->
 
-        </div>
-        <div class="offer_separated">
-          <ul class="offer_separated_list">
-            <li class="offer_separated_item">
-              <div class="offer_back" id="offer_more1">
-                <div class="offer_title">Geometric Bookcase</div>
-                <div class="offer_cost">Up to 20% discount</div>
-                <button class="offer_read_more_btn">Read more→</button>
-              </div>
-            </li>
-            <li class="offer_separated_item" id="offer_separated_last_item">
-              <div class="offer_back" id="offer_more2">
-                <div class="offer_title">Minimal Sofa collections</div>
-                <div class="offer_cost">Sale upto 40% discount</div>
-                <button class="offer_read_more_btn">Read more→</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+<!--        </div>-->
+<!--        <div class="offer_separated">-->
+<!--          <ul class="offer_separated_list">-->
+<!--            <li class="offer_separated_item">-->
+<!--              <div class="offer_back" id="offer_more1">-->
+<!--                <div class="offer_title">Geometric Bookcase</div>-->
+<!--                <div class="offer_cost">Up to 20% discount</div>-->
+<!--                <button class="offer_read_more_btn">Read more→</button>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="offer_separated_item" id="offer_separated_last_item">-->
+<!--              <div class="offer_back" id="offer_more2">-->
+<!--                <div class="offer_title">Minimal Sofa collections</div>-->
+<!--                <div class="offer_cost">Sale upto 40% discount</div>-->
+<!--                <button class="offer_read_more_btn">Read more→</button>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="trending">
-    <div class="container">
-      <div class="trending_inner">
-        <div class="title">Trending</div>
-        <ul class="categories_list">
-          <li class="category_item">Top Products</li>
-          <li class="category_item">New Arrivals</li>
-          <li class="category_item">Best Sellers</li>
-        </ul>
-        <ul class="products_list">
-          <li class="product_item">
-            <div class="product_img">
-              <div class="corner_info">New</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="product_category">chair</div>
-            <div class="product_name">Minimal LCD chair</div>
-            <div class="product_cost_and_rating">
-              <div class="product_cost_and_discount">
-                <div class="product_cost">180</div>
-                <div class="product_discount">250</div>
-              </div>
-              <ul class="product_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
+<!--  <section class="trending">-->
+<!--    <div class="container">-->
+<!--      <div class="trending_inner">-->
+<!--        <div class="title">Trending</div>-->
+<!--        <ul class="categories_list">-->
+<!--          <li class="category_item">Top Products</li>-->
+<!--          <li class="category_item">New Arrivals</li>-->
+<!--          <li class="category_item">Best Sellers</li>-->
+<!--        </ul>-->
+<!--        <ul class="products_list">-->
+<!--          <li class="product_item">-->
+<!--            <div class="product_img">-->
+<!--              <div class="corner_info">New</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="product_category">chair</div>-->
+<!--            <div class="product_name">Minimal LCD chair</div>-->
+<!--            <div class="product_cost_and_rating">-->
+<!--              <div class="product_cost_and_discount">-->
+<!--                <div class="product_cost">180</div>-->
+<!--                <div class="product_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="product_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
 
-          </li>
-          <li class="product_item">
-            <div class="product_img">
-              <div class="corner_info">New</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="product_category">chair</div>
-            <div class="product_name">Minimal LCD chair</div>
-            <div class="product_cost_and_rating">
-              <div class="product_cost_and_discount">
-                <div class="product_cost">180</div>
-                <div class="product_discount">250</div>
-              </div>
-              <ul class="product_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
-          </li>
-          <li class="product_item">
-              <div class="product_img">
-                <div class="corner_info">New</div>
-                <ul class="hidden_menu_list">
-                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-                </ul>
-              </div>
-              <div class="product_category">chair</div>
-              <div class="product_name">Minimal LCD chair</div>
-              <div class="product_cost_and_rating">
-                <div class="product_cost_and_discount">
-                  <div class="product_cost">180</div>
-                  <div class="product_discount">250</div>
-                </div>
-                <ul class="product_rating">
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-                </ul>
-              </div>
+<!--          </li>-->
+<!--          <li class="product_item">-->
+<!--            <div class="product_img">-->
+<!--              <div class="corner_info">New</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="product_category">chair</div>-->
+<!--            <div class="product_name">Minimal LCD chair</div>-->
+<!--            <div class="product_cost_and_rating">-->
+<!--              <div class="product_cost_and_discount">-->
+<!--                <div class="product_cost">180</div>-->
+<!--                <div class="product_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="product_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="product_item">-->
+<!--              <div class="product_img">-->
+<!--                <div class="corner_info">New</div>-->
+<!--                <ul class="hidden_menu_list">-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="product_category">chair</div>-->
+<!--              <div class="product_name">Minimal LCD chair</div>-->
+<!--              <div class="product_cost_and_rating">-->
+<!--                <div class="product_cost_and_discount">-->
+<!--                  <div class="product_cost">180</div>-->
+<!--                  <div class="product_discount">250</div>-->
+<!--                </div>-->
+<!--                <ul class="product_rating">-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
 
-            </li>
-          <li class="product_item">
-              <div class="product_img">
-                <div class="corner_info">New</div>
-                <ul class="hidden_menu_list">
-                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-                </ul>
-              </div>
-              <div class="product_category">chair</div>
-              <div class="product_name">Minimal LCD chair</div>
-              <div class="product_cost_and_rating">
-                <div class="product_cost_and_discount">
-                  <div class="product_cost">180</div>
-                  <div class="product_discount">250</div>
-                </div>
-                <ul class="product_rating">
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-                </ul>
-              </div>
+<!--            </li>-->
+<!--          <li class="product_item">-->
+<!--              <div class="product_img">-->
+<!--                <div class="corner_info">New</div>-->
+<!--                <ul class="hidden_menu_list">-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="product_category">chair</div>-->
+<!--              <div class="product_name">Minimal LCD chair</div>-->
+<!--              <div class="product_cost_and_rating">-->
+<!--                <div class="product_cost_and_discount">-->
+<!--                  <div class="product_cost">180</div>-->
+<!--                  <div class="product_discount">250</div>-->
+<!--                </div>-->
+<!--                <ul class="product_rating">-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
 
-            </li>
-          <li class="product_item">
-              <div class="product_img">
-                <div class="corner_info">New</div>
-                <ul class="hidden_menu_list">
-                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-                </ul>
-              </div>
-              <div class="product_category">chair</div>
-              <div class="product_name">Minimal LCD chair</div>
-              <div class="product_cost_and_rating">
-                <div class="product_cost_and_discount">
-                  <div class="product_cost">180</div>
-                  <div class="product_discount">250</div>
-                </div>
-                <ul class="product_rating">
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-                </ul>
-              </div>
+<!--            </li>-->
+<!--          <li class="product_item">-->
+<!--              <div class="product_img">-->
+<!--                <div class="corner_info">New</div>-->
+<!--                <ul class="hidden_menu_list">-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="product_category">chair</div>-->
+<!--              <div class="product_name">Minimal LCD chair</div>-->
+<!--              <div class="product_cost_and_rating">-->
+<!--                <div class="product_cost_and_discount">-->
+<!--                  <div class="product_cost">180</div>-->
+<!--                  <div class="product_discount">250</div>-->
+<!--                </div>-->
+<!--                <ul class="product_rating">-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
 
-            </li>
-          <li class="product_item">
-              <div class="product_img">
-                <div class="corner_info">New</div>
-                <ul class="hidden_menu_list">
-                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-                </ul>
-              </div>
-              <div class="product_category">chair</div>
-              <div class="product_name">Minimal LCD chair</div>
-              <div class="product_cost_and_rating">
-                <div class="product_cost_and_discount">
-                  <div class="product_cost">180</div>
-                  <div class="product_discount">250</div>
-                </div>
-                <ul class="product_rating">
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-                </ul>
-              </div>
+<!--            </li>-->
+<!--          <li class="product_item">-->
+<!--              <div class="product_img">-->
+<!--                <div class="corner_info">New</div>-->
+<!--                <ul class="hidden_menu_list">-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="product_category">chair</div>-->
+<!--              <div class="product_name">Minimal LCD chair</div>-->
+<!--              <div class="product_cost_and_rating">-->
+<!--                <div class="product_cost_and_discount">-->
+<!--                  <div class="product_cost">180</div>-->
+<!--                  <div class="product_discount">250</div>-->
+<!--                </div>-->
+<!--                <ul class="product_rating">-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
 
-            </li>
-          <li class="product_item">
-            <div class="product_img">
-              <div class="corner_info">New</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="product_category">chair</div>
-            <div class="product_name">Minimal LCD chair</div>
-            <div class="product_cost_and_rating">
-              <div class="product_cost_and_discount">
-                <div class="product_cost">180</div>
-                <div class="product_discount">250</div>
-              </div>
-              <ul class="product_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
-          </li>
-          <li class="product_item">
-            <div class="product_img">
-              <div class="corner_info">New</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="product_category">chair</div>
-            <div class="product_name">Minimal LCD chair</div>
-            <div class="product_cost_and_rating">
-              <div class="product_cost_and_discount">
-                <div class="product_cost">180</div>
-                <div class="product_discount">250</div>
-              </div>
-              <ul class="product_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
+<!--            </li>-->
+<!--          <li class="product_item">-->
+<!--            <div class="product_img">-->
+<!--              <div class="corner_info">New</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="product_category">chair</div>-->
+<!--            <div class="product_name">Minimal LCD chair</div>-->
+<!--            <div class="product_cost_and_rating">-->
+<!--              <div class="product_cost_and_discount">-->
+<!--                <div class="product_cost">180</div>-->
+<!--                <div class="product_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="product_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="product_item">-->
+<!--            <div class="product_img">-->
+<!--              <div class="corner_info">New</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="product_category">chair</div>-->
+<!--            <div class="product_name">Minimal LCD chair</div>-->
+<!--            <div class="product_cost_and_rating">-->
+<!--              <div class="product_cost_and_discount">-->
+<!--                <div class="product_cost">180</div>-->
+<!--                <div class="product_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="product_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
 
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="special_offer">
-    <div class="container">
-      <div class="special_offer_inner">
-        <div class="title">Special Offer</div>
-        <ul class="special_offers_list">
-          <li class="special_offer_item">
-            <div class="special_offer_corner_info">40% off</div>
-            <div class="special_offer_content">
-              <div class="special_offer_title">Living Room Furniture</div>
-              <div class="special_offer_description">
-                You don't have a chair. Are you ready for growth? Shop with us 40% discount!
-              </div>
-              <div class="special_offer_cost_and_btn">
-                <div class="special_offer_cost_and_discount">
-                  <div class="special_offer_cost">150</div>
-                  <div class="special_offer_discount">250</div>
-                </div>
-                <button class="special_offer_buy_btn">Shop Now</button>
-              </div>
-              <ul class="special_offer_time">
-                <li class="special_offer_time_item">
-                  <div class="number">10</div>
-                  <div class="day_time">days</div>
-                </li>
-                <li class="special_offer_time_item">
-                  <div class="number">15</div>
-                  <div class="day_time">hrs</div>
-                </li>
-                <li class="special_offer_time_item">
-                  <div class="number">30</div>
-                  <div class="day_time">min</div>
-                </li>
-                <li class="special_offer_time_item">
-                  <div class="number">22</div>
-                  <div class="day_time">secs</div>
-                </li>
-              </ul>
-            </div>
+<!--  <section class="special_offer">-->
+<!--    <div class="container">-->
+<!--      <div class="special_offer_inner">-->
+<!--        <div class="title">Special Offer</div>-->
+<!--        <ul class="special_offers_list">-->
+<!--          <li class="special_offer_item">-->
+<!--            <div class="special_offer_corner_info">40% off</div>-->
+<!--            <div class="special_offer_content">-->
+<!--              <div class="special_offer_title">Living Room Furniture</div>-->
+<!--              <div class="special_offer_description">-->
+<!--                You don't have a chair. Are you ready for growth? Shop with us 40% discount!-->
+<!--              </div>-->
+<!--              <div class="special_offer_cost_and_btn">-->
+<!--                <div class="special_offer_cost_and_discount">-->
+<!--                  <div class="special_offer_cost">150</div>-->
+<!--                  <div class="special_offer_discount">250</div>-->
+<!--                </div>-->
+<!--                <button class="special_offer_buy_btn">Shop Now</button>-->
+<!--              </div>-->
+<!--              <ul class="special_offer_time">-->
+<!--                <li class="special_offer_time_item">-->
+<!--                  <div class="number">10</div>-->
+<!--                  <div class="day_time">days</div>-->
+<!--                </li>-->
+<!--                <li class="special_offer_time_item">-->
+<!--                  <div class="number">15</div>-->
+<!--                  <div class="day_time">hrs</div>-->
+<!--                </li>-->
+<!--                <li class="special_offer_time_item">-->
+<!--                  <div class="number">30</div>-->
+<!--                  <div class="day_time">min</div>-->
+<!--                </li>-->
+<!--                <li class="special_offer_time_item">-->
+<!--                  <div class="number">22</div>-->
+<!--                  <div class="day_time">secs</div>-->
+<!--                </li>-->
+<!--              </ul>-->
+<!--            </div>-->
 
-          </li>
-          <li class="special_offer_item">
-            <div class="special_offer_corner_info">50% off</div>
-            <div class="special_offer_content">
-              <div class="special_offer_title">Modern chair</div>
-              <div class="special_offer_description">
-                Hot chairs of the modern era are now available in our stock.
-              </div>
-              <div class="special_offer_cost_and_btn">
-                <div class="special_offer_cost_and_discount">
-                  <div class="special_offer_cost">75</div>
-                  <div class="special_offer_discount">150</div>
-                </div>
-                <button class="special_offer_buy_btn">Shop Now</button>
-              </div>
-              <ul class="special_offer_time">
-                <li class="special_offer_time_item">
-                  <div class="number">15</div>
-                  <div class="day_time">days</div>
-                </li>
-                <li class="special_offer_time_item">
-                  <div class="number">08</div>
-                  <div class="day_time">hrs</div>
-                </li>
-                <li class="special_offer_time_item">
-                  <div class="number">20</div>
-                  <div class="day_time">min</div>
-                </li>
-                <li class="special_offer_time_item">
-                  <div class="number">12</div>
-                  <div class="day_time">secs</div>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!--          </li>-->
+<!--          <li class="special_offer_item">-->
+<!--            <div class="special_offer_corner_info">50% off</div>-->
+<!--            <div class="special_offer_content">-->
+<!--              <div class="special_offer_title">Modern chair</div>-->
+<!--              <div class="special_offer_description">-->
+<!--                Hot chairs of the modern era are now available in our stock.-->
+<!--              </div>-->
+<!--              <div class="special_offer_cost_and_btn">-->
+<!--                <div class="special_offer_cost_and_discount">-->
+<!--                  <div class="special_offer_cost">75</div>-->
+<!--                  <div class="special_offer_discount">150</div>-->
+<!--                </div>-->
+<!--                <button class="special_offer_buy_btn">Shop Now</button>-->
+<!--              </div>-->
+<!--              <ul class="special_offer_time">-->
+<!--                <li class="special_offer_time_item">-->
+<!--                  <div class="number">15</div>-->
+<!--                  <div class="day_time">days</div>-->
+<!--                </li>-->
+<!--                <li class="special_offer_time_item">-->
+<!--                  <div class="number">08</div>-->
+<!--                  <div class="day_time">hrs</div>-->
+<!--                </li>-->
+<!--                <li class="special_offer_time_item">-->
+<!--                  <div class="number">20</div>-->
+<!--                  <div class="day_time">min</div>-->
+<!--                </li>-->
+<!--                <li class="special_offer_time_item">-->
+<!--                  <div class="number">12</div>-->
+<!--                  <div class="day_time">secs</div>-->
+<!--                </li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="our_products">
-    <div class="container">
-      <div class="our_products_inner">
-        <div class="our_products_title">Our Products</div>
-        <ul class="our_products_tabs_list">
-          <li class="our_products_tabs_item">All Products</li>
-          <li class="our_products_tabs_item">Best Sellers</li>
-          <li class="our_products_tabs_item">New Arrivals</li>
-          <li class="our_products_tabs_item">Todays Deals</li>
-        </ul>
-        <ul class="our_products_list">
-          <li class="our_products_item">
-            <div class="our_products_img">
-              <div class="corner_info">Sale</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="our_products_category">chair</div>
-            <div class="our_products_name">Minimal LCD chair</div>
-            <div class="our_products_cost_and_rating">
-              <div class="our_products_cost_and_discount">
-                <div class="our_products_cost">180</div>
-                <div class="our_products_discount">250</div>
-              </div>
-              <ul class="our_products_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
-          </li>
-          <li class="our_products_item">
-            <div class="our_products_img">
-              <div class="corner_info">Sale</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="our_products_category">chair</div>
-            <div class="our_products_name">Minimal LCD chair</div>
-            <div class="our_products_cost_and_rating">
-              <div class="our_products_cost_and_discount">
-                <div class="our_products_cost">180</div>
-                <div class="our_products_discount">250</div>
-              </div>
-              <ul class="our_products_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
-          </li>
-          <li class="our_products_item">
-            <div class="our_products_img">
-              <div class="corner_info">Sale</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="our_products_category">chair</div>
-            <div class="our_products_name">Minimal LCD chair</div>
-            <div class="our_products_cost_and_rating">
-              <div class="our_products_cost_and_discount">
-                <div class="our_products_cost">180</div>
-                <div class="our_products_discount">250</div>
-              </div>
-              <ul class="our_products_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
-          </li>
-          <li class="our_products_item">
-            <div class="our_products_img">
-              <div class="corner_info">Sale</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="our_products_category">chair</div>
-            <div class="our_products_name">Minimal LCD chair</div>
-            <div class="our_products_cost_and_rating">
-              <div class="our_products_cost_and_discount">
-                <div class="our_products_cost">180</div>
-                <div class="our_products_discount">250</div>
-              </div>
-              <ul class="our_products_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
-          </li>
-          <li class="our_products_item">
-              <div class="our_products_img">
-                <div class="corner_info">Sale</div>
-                <ul class="hidden_menu_list">
-                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-                </ul>
-              </div>
-              <div class="our_products_category">chair</div>
-              <div class="our_products_name">Minimal LCD chair</div>
-              <div class="our_products_cost_and_rating">
-                <div class="our_products_cost_and_discount">
-                  <div class="our_products_cost">180</div>
-                  <div class="our_products_discount">250</div>
-                </div>
-                <ul class="our_products_rating">
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-                </ul>
-              </div>
-            </li>
-          <li class="our_products_item">
-              <div class="our_products_img">
-                <div class="corner_info">Sale</div>
-                <ul class="hidden_menu_list">
-                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-                </ul>
-              </div>
-              <div class="our_products_category">chair</div>
-              <div class="our_products_name">Minimal LCD chair</div>
-              <div class="our_products_cost_and_rating">
-                <div class="our_products_cost_and_discount">
-                  <div class="our_products_cost">180</div>
-                  <div class="our_products_discount">250</div>
-                </div>
-                <ul class="our_products_rating">
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-                </ul>
-              </div>
-            </li>
-          <li class="our_products_item">
-              <div class="our_products_img">
-                <div class="corner_info">Sale</div>
-                <ul class="hidden_menu_list">
-                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-                </ul>
-              </div>
-              <div class="our_products_category">chair</div>
-              <div class="our_products_name">Minimal LCD chair</div>
-              <div class="our_products_cost_and_rating">
-                <div class="our_products_cost_and_discount">
-                  <div class="our_products_cost">180</div>
-                  <div class="our_products_discount">250</div>
-                </div>
-                <ul class="our_products_rating">
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item"><i class="fa fa-star"></i></li>
-                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-                </ul>
-              </div>
-            </li>
-          <li class="our_products_item">
-            <div class="our_products_img">
-              <div class="corner_info">Sale</div>
-              <ul class="hidden_menu_list">
-                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>
-                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>
-                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>
-              </ul>
-            </div>
-            <div class="our_products_category">chair</div>
-            <div class="our_products_name">Minimal LCD chair</div>
-            <div class="our_products_cost_and_rating">
-              <div class="our_products_cost_and_discount">
-                <div class="our_products_cost">180</div>
-                <div class="our_products_discount">250</div>
-              </div>
-              <ul class="our_products_rating">
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item"><i class="fa fa-star"></i></li>
-                <li class="stars_item non-active"><i class="fa fa-star"></i></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <div class="our_products_pages">
-          <button class="next_page">Next Page <i class="fas fa-chevron-right"></i></button>
-          <div class="pages_list">
-            <div>Page</div>
-            <input class="current_page">
-            <div>of <p class="pages_count">100</p></div>
-            <button class="previous_page"><i class="fas fa-chevron-left"></i></button>
-            <button class="next_page"><i class="fas fa-chevron-right"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!--  <section class="our_products">-->
+<!--    <div class="container">-->
+<!--      <div class="our_products_inner">-->
+<!--        <div class="our_products_title">Our Products</div>-->
+<!--        <ul class="our_products_tabs_list">-->
+<!--          <li class="our_products_tabs_item">All Products</li>-->
+<!--          <li class="our_products_tabs_item">Best Sellers</li>-->
+<!--          <li class="our_products_tabs_item">New Arrivals</li>-->
+<!--          <li class="our_products_tabs_item">Todays Deals</li>-->
+<!--        </ul>-->
+<!--        <ul class="our_products_list">-->
+<!--          <li class="our_products_item">-->
+<!--            <div class="our_products_img">-->
+<!--              <div class="corner_info">Sale</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="our_products_category">chair</div>-->
+<!--            <div class="our_products_name">Minimal LCD chair</div>-->
+<!--            <div class="our_products_cost_and_rating">-->
+<!--              <div class="our_products_cost_and_discount">-->
+<!--                <div class="our_products_cost">180</div>-->
+<!--                <div class="our_products_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="our_products_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="our_products_item">-->
+<!--            <div class="our_products_img">-->
+<!--              <div class="corner_info">Sale</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="our_products_category">chair</div>-->
+<!--            <div class="our_products_name">Minimal LCD chair</div>-->
+<!--            <div class="our_products_cost_and_rating">-->
+<!--              <div class="our_products_cost_and_discount">-->
+<!--                <div class="our_products_cost">180</div>-->
+<!--                <div class="our_products_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="our_products_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="our_products_item">-->
+<!--            <div class="our_products_img">-->
+<!--              <div class="corner_info">Sale</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="our_products_category">chair</div>-->
+<!--            <div class="our_products_name">Minimal LCD chair</div>-->
+<!--            <div class="our_products_cost_and_rating">-->
+<!--              <div class="our_products_cost_and_discount">-->
+<!--                <div class="our_products_cost">180</div>-->
+<!--                <div class="our_products_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="our_products_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="our_products_item">-->
+<!--            <div class="our_products_img">-->
+<!--              <div class="corner_info">Sale</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="our_products_category">chair</div>-->
+<!--            <div class="our_products_name">Minimal LCD chair</div>-->
+<!--            <div class="our_products_cost_and_rating">-->
+<!--              <div class="our_products_cost_and_discount">-->
+<!--                <div class="our_products_cost">180</div>-->
+<!--                <div class="our_products_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="our_products_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="our_products_item">-->
+<!--              <div class="our_products_img">-->
+<!--                <div class="corner_info">Sale</div>-->
+<!--                <ul class="hidden_menu_list">-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="our_products_category">chair</div>-->
+<!--              <div class="our_products_name">Minimal LCD chair</div>-->
+<!--              <div class="our_products_cost_and_rating">-->
+<!--                <div class="our_products_cost_and_discount">-->
+<!--                  <div class="our_products_cost">180</div>-->
+<!--                  <div class="our_products_discount">250</div>-->
+<!--                </div>-->
+<!--                <ul class="our_products_rating">-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--          <li class="our_products_item">-->
+<!--              <div class="our_products_img">-->
+<!--                <div class="corner_info">Sale</div>-->
+<!--                <ul class="hidden_menu_list">-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="our_products_category">chair</div>-->
+<!--              <div class="our_products_name">Minimal LCD chair</div>-->
+<!--              <div class="our_products_cost_and_rating">-->
+<!--                <div class="our_products_cost_and_discount">-->
+<!--                  <div class="our_products_cost">180</div>-->
+<!--                  <div class="our_products_discount">250</div>-->
+<!--                </div>-->
+<!--                <ul class="our_products_rating">-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--          <li class="our_products_item">-->
+<!--              <div class="our_products_img">-->
+<!--                <div class="corner_info">Sale</div>-->
+<!--                <ul class="hidden_menu_list">-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                  <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="our_products_category">chair</div>-->
+<!--              <div class="our_products_name">Minimal LCD chair</div>-->
+<!--              <div class="our_products_cost_and_rating">-->
+<!--                <div class="our_products_cost_and_discount">-->
+<!--                  <div class="our_products_cost">180</div>-->
+<!--                  <div class="our_products_discount">250</div>-->
+<!--                </div>-->
+<!--                <ul class="our_products_rating">-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                  <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--          <li class="our_products_item">-->
+<!--            <div class="our_products_img">-->
+<!--              <div class="corner_info">Sale</div>-->
+<!--              <ul class="hidden_menu_list">-->
+<!--                <li class="hidden_menu_item"><i class="far fa-heart"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-shopping-bag"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="far fa-sync-alt"></i></li>-->
+<!--                <li class="hidden_menu_item"><i class="fal fa-eye"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="our_products_category">chair</div>-->
+<!--            <div class="our_products_name">Minimal LCD chair</div>-->
+<!--            <div class="our_products_cost_and_rating">-->
+<!--              <div class="our_products_cost_and_discount">-->
+<!--                <div class="our_products_cost">180</div>-->
+<!--                <div class="our_products_discount">250</div>-->
+<!--              </div>-->
+<!--              <ul class="our_products_rating">-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item"><i class="fa fa-star"></i></li>-->
+<!--                <li class="stars_item non-active"><i class="fa fa-star"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--        <div class="our_products_pages">-->
+<!--          <button class="next_page">Next Page <i class="fas fa-chevron-right"></i></button>-->
+<!--          <div class="pages_list">-->
+<!--            <div>Page</div>-->
+<!--            <input class="current_page">-->
+<!--            <div>of <p class="pages_count">100</p></div>-->
+<!--            <button class="previous_page"><i class="fas fa-chevron-left"></i></button>-->
+<!--            <button class="next_page"><i class="fas fa-chevron-right"></i></button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="quotes">
-    <div class="container">
-      <div class="quotes_inner">
-        <div class="title">What Our Customer Says</div>
-        <ul class="quotes_list">
-          <div class="quote_arrow_left"><i class="fas fa-chevron-left"></i></div>
-          <div class="quote_arrow_right"><i class="fas fa-chevron-right"></i></div>
-          <li class="quotes_item">
-            <div class="quote_photo"></div>
-            <div class="quote_content">I like Furniking.com and as compared to other company it's polices and customers support is very good easy to reach., also many time they unable to delivered. The ultricies are pregnant while the quis is suspended. Risus commodo viverra maecenas accumsan lacus vel facilisist amet.</div>
-            <div class="quote_author">Angelina Joly</div>
-            <div class="quote_job">Co-founder</div>
-          </li>
+<!--  <section class="quotes">-->
+<!--    <div class="container">-->
+<!--      <div class="quotes_inner">-->
+<!--        <div class="title">What Our Customer Says</div>-->
+<!--        <ul class="quotes_list">-->
+<!--          <div class="quote_arrow_left"><i class="fas fa-chevron-left"></i></div>-->
+<!--          <div class="quote_arrow_right"><i class="fas fa-chevron-right"></i></div>-->
+<!--          <li class="quotes_item">-->
+<!--            <div class="quote_photo"></div>-->
+<!--            <div class="quote_content">I like Furniking.com and as compared to other company it's polices and customers support is very good easy to reach., also many time they unable to delivered. The ultricies are pregnant while the quis is suspended. Risus commodo viverra maecenas accumsan lacus vel facilisist amet.</div>-->
+<!--            <div class="quote_author">Angelina Joly</div>-->
+<!--            <div class="quote_job">Co-founder</div>-->
+<!--          </li>-->
 
-        </ul>
-      </div>
-    </div>
-  </section>
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="articles">
-    <div class="container">
-      <div class="articles_inner">
-        <div class="title"></div>
-        <ul class="articles_list">
-          <li class="article_item" id="article_item1">
-            <div class="article_info">
-              <div class="article_category">furniture</div>
-              <div class="article_date">23 September 2022</div>
-            </div>
-            <div class="article_title">Beginner guide buying minimal sofa</div>
-            <button class="article_read_more_btn">Read more</button>
-          </li>
-          <li class="article_item" id="article_item2">
-            <div class="article_info">
-              <div class="article_category">table</div>
-              <div class="article_date">23 September 2022</div>
-            </div>
-            <div class="article_title">Buying best minimal computer table</div>
-            <button class="article_read_more_btn">Read more</button>
-          </li>
-          <li class="article_item" id="article_item3">
-            <div class="article_info">
-              <div class="article_category">Bench</div>
-              <div class="article_date">23 March 2022</div>
-            </div>
-            <div class="article_title">How to choose best modern bench</div>
-            <button class="article_read_more_btn">Read more</button>
-          </li>
-          <li class="article_item" id="article_item4">
-            <div class="article_info">
-              <div class="article_category">Chair</div>
-              <div class="article_date">23 March 2022</div>
-            </div>
-            <div class="article_title">Best Summer Outfit Style in this Country
-            </div>
-            <button class="article_read_more_btn">Read more</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!--  <section class="articles">-->
+<!--    <div class="container">-->
+<!--      <div class="articles_inner">-->
+<!--        <div class="title"></div>-->
+<!--        <ul class="articles_list">-->
+<!--          <li class="article_item" id="article_item1">-->
+<!--            <div class="article_info">-->
+<!--              <div class="article_category">furniture</div>-->
+<!--              <div class="article_date">23 September 2022</div>-->
+<!--            </div>-->
+<!--            <div class="article_title">Beginner guide buying minimal sofa</div>-->
+<!--            <button class="article_read_more_btn">Read more</button>-->
+<!--          </li>-->
+<!--          <li class="article_item" id="article_item2">-->
+<!--            <div class="article_info">-->
+<!--              <div class="article_category">table</div>-->
+<!--              <div class="article_date">23 September 2022</div>-->
+<!--            </div>-->
+<!--            <div class="article_title">Buying best minimal computer table</div>-->
+<!--            <button class="article_read_more_btn">Read more</button>-->
+<!--          </li>-->
+<!--          <li class="article_item" id="article_item3">-->
+<!--            <div class="article_info">-->
+<!--              <div class="article_category">Bench</div>-->
+<!--              <div class="article_date">23 March 2022</div>-->
+<!--            </div>-->
+<!--            <div class="article_title">How to choose best modern bench</div>-->
+<!--            <button class="article_read_more_btn">Read more</button>-->
+<!--          </li>-->
+<!--          <li class="article_item" id="article_item4">-->
+<!--            <div class="article_info">-->
+<!--              <div class="article_category">Chair</div>-->
+<!--              <div class="article_date">23 March 2022</div>-->
+<!--            </div>-->
+<!--            <div class="article_title">Best Summer Outfit Style in this Country-->
+<!--            </div>-->
+<!--            <button class="article_read_more_btn">Read more</button>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="footer_nav">
-    <div class="container">
-      <div class="footer_nav_inner">
-        <ul class="nav_list">
-          <li class="nav_item" id="about">
-            <img src="img/logo.png" alt="footer_logo" class="logo">
-            <div class="nav_description">Funking is the a popular Ecommerce site. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
-            <ul class="social_media_list">
-              <li class="social_media_item"><i class="fab fa-facebook-f"></i></li>
-              <li class="social_media_item"><i class="fab fa-twitter"></i></li>
-              <li class="social_media_item"><i class="fab fa-instagram"></i></li>
-              <li class="social_media_item"><i class="fab fa-pinterest-p"></i></li>
-            </ul>
-          </li>
-          <li class="nav_item" id="footer_help">
-            <div class="nav_item_title">Help</div>
-            <ul class="nav_item_links">
-              <li class="nav_item_link">Privacy Policy</li>
-              <li class="nav_item_link">Shipping & Delivery</li>
-              <li class="nav_item_link">Refund Policy</li>
-              <li class="nav_item_link">Track Your Order</li>
-            </ul>
-          </li>
-          <li class="nav_item" id="footer_store">
-            <div class="nav_item_title">Store</div>
-            <ul class="nav_item_links">
-              <li class="nav_item_link">Furniture</li>
-              <li class="nav_item_link">Tabble</li>
-              <li class="nav_item_link">Sofa</li>
-              <li class="nav_item_link">Other</li>
-            </ul>
-          </li>
-          <li class="nav_item" id="footer_supports">
-            <div class="nav_item_title">Supports</div>
-            <ul class="nav_item_links">
-              <li class="nav_item_link">Feedback</li>
-              <li class="nav_item_link">Contact us</li>
-              <li class="nav_item_link">Download app</li>
-              <li class="nav_item_link">Terms condition</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!--  <section class="footer_nav">-->
+<!--    <div class="container">-->
+<!--      <div class="footer_nav_inner">-->
+<!--        <ul class="nav_list">-->
+<!--          <li class="nav_item" id="about">-->
+<!--            <img src="img/logo.png" alt="footer_logo" class="logo">-->
+<!--            <div class="nav_description">Funking is the a popular Ecommerce site. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>-->
+<!--            <ul class="social_media_list">-->
+<!--              <li class="social_media_item"><i class="fab fa-facebook-f"></i></li>-->
+<!--              <li class="social_media_item"><i class="fab fa-twitter"></i></li>-->
+<!--              <li class="social_media_item"><i class="fab fa-instagram"></i></li>-->
+<!--              <li class="social_media_item"><i class="fab fa-pinterest-p"></i></li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li class="nav_item" id="footer_help">-->
+<!--            <div class="nav_item_title">Help</div>-->
+<!--            <ul class="nav_item_links">-->
+<!--              <li class="nav_item_link">Privacy Policy</li>-->
+<!--              <li class="nav_item_link">Shipping & Delivery</li>-->
+<!--              <li class="nav_item_link">Refund Policy</li>-->
+<!--              <li class="nav_item_link">Track Your Order</li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li class="nav_item" id="footer_store">-->
+<!--            <div class="nav_item_title">Store</div>-->
+<!--            <ul class="nav_item_links">-->
+<!--              <li class="nav_item_link">Furniture</li>-->
+<!--              <li class="nav_item_link">Tabble</li>-->
+<!--              <li class="nav_item_link">Sofa</li>-->
+<!--              <li class="nav_item_link">Other</li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li class="nav_item" id="footer_supports">-->
+<!--            <div class="nav_item_title">Supports</div>-->
+<!--            <ul class="nav_item_links">-->
+<!--              <li class="nav_item_link">Feedback</li>-->
+<!--              <li class="nav_item_link">Contact us</li>-->
+<!--              <li class="nav_item_link">Download app</li>-->
+<!--              <li class="nav_item_link">Terms condition</li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section class="footer">
+  <!--<section class="footer">
     <div class="container">
       <div class="footer_inner">
         <div class="footer_left">© 2021 Funking - All rights reserved.</div>
@@ -851,7 +870,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <script>
     let accordionMenuWidth = document.getElementById("accordion_menu").offsetWidth;
