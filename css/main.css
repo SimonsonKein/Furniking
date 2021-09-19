@@ -3,7 +3,6 @@ body{
     width: 100%;
     font-family: Rubik, sans-serif;
     font-size: 14px;
-    overflow-x: hidden;
 }
 
 .container {
@@ -493,9 +492,8 @@ body{
 
 .offers .offers_inner {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-
+    gap: 20px;
     font-family: Mulish, sans-serif;
 }
 .offers .offer_main,
@@ -504,17 +502,16 @@ body{
 }
 
 .offers .offer_separated_list {
-    margin-left: 20px;
     list-style: none;
     display: flex;
     flex-direction: column;
     height: 500px;
     flex-basis: auto;
     justify-content: space-between;
+    gap: 20px;
 }
 
 #offer_separated_last_item {
-    margin-top: 20px;
 }
 
 .offers .offer_separated_item {
@@ -523,10 +520,10 @@ body{
 
 .offers .offer_back {
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
+    background-size: auto 100%;
+    background-position: right bottom;
     /*background-attachment: fixed;*/
-    padding: 25px 50px;
+    padding: 25px 50px 50px;
     height: 100%;
 }
 
@@ -535,9 +532,11 @@ body{
 }
 #offer_more1 {
     background-image: url("../img/offer_more1.png");
+    background-color: #f3f6f9;
 }
 #offer_more2 {
     background-image: url("../img/offer_more2.png");
+    background-color: #f4f4f4;
 }
 
 .offers .offer_title {
@@ -614,22 +613,27 @@ body{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px 15px;
+    justify-content: center;
+    gap: 40px 15px;
 }
 
 .trending .product_item {
     flex-basis: 22%;
     width: 270px;
+    transition: .3s ease;
+}
+
+.trending .product_item:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px 0 0 #cccccc;
+}
+
+
+.trending .product_item > img {
+    height: 290px;
 }
 
 .trending .product_img {
-    background-image: url("../img/tranding1.png");
-    height: 290px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-
     position: relative;
 }
 
@@ -645,6 +649,7 @@ body{
 
 .trending .hidden_menu_list {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -659,7 +664,7 @@ body{
     padding: 15px 7px;
 }
 
-.trending .hidden_menu_list:hover {
+.trending .product_item:hover .hidden_menu_list{
     opacity: 1;
 }
 
@@ -679,6 +684,10 @@ body{
 .trending .hidden_menu_item:hover {
     background-color: #7ac751;
     color: #ffffff;
+}
+
+.trending .product_content {
+    padding: 0 20px 30px;
 }
 
 .trending .product_category {
@@ -768,9 +777,10 @@ body{
 .special_offer .special_offer_item {
     position: relative;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: auto 100%;
     background-position: center;
     flex-basis: 50%;
+    background-color: #f6f6fa;
 }
 
 .special_offer .special_offer_item:first-child {
@@ -817,6 +827,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .special_offer .special_offer_cost_and_discount {
@@ -854,10 +865,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+
+    flex-wrap: wrap;
 }
 
 .special_offer .special_offer_time_item {
-    padding: 15px;
     background-color: #7ac751;
     color: #ffffff;
     display: flex;
@@ -865,7 +878,8 @@ body{
     justify-content: center;
     flex-direction: column;
     border-radius: 50%;
-
+    width: 50px;
+    height: 50px;
     font-family: Rubik, sans-serif;
 }
 
