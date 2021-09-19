@@ -1,11 +1,72 @@
-@media (max-width: 600px){
-    .header_top .header_top_inner {
-        justify-content: center;
+@media (max-width: 1024px) {
+
+    .nav {
+        /*background: none;*/
     }
 
-    .header_top .header_top_left {
+    .nav .container {
+        padding: 0;
+    }
+
+    .nav .nav_list {
+        display: block;
+    }
+
+    .nav .nav_item {
+        padding: 20px 35px;
+    }
+
+    #accordion_menu {
+        margin: 0;
+    }
+
+    .nav .menu_item {
+        border: none;
+        border-bottom: 1px #E3E3E3 solid;
+    }
+
+    .ad_slider .container {
+        padding: 0;
+    }
+
+    .ad_slider .ad_slider_inner {
+        margin: 0;
+    }
+
+    .ad_slider .slider_item {
+        flex-direction: column-reverse;
+    }
+
+    .ad_slider .slider_list {
+        margin: 0;
+    }
+
+    .ad_slider .main_product img {
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .ad_slider .more_products_list {
         display: none;
     }
+
+    .ad_slider .title {
+        font-size: 30px;
+    }
+
+    .ad_slider .description {
+        font-size: 23px;
+    }
+
+    .features .features_list {
+    }
+
+    .features .feature_item {
+        justify-content: center;
+        flex-basis: 49%;
+    }
+
+
 }
 
 @media (max-width: 770px) {
@@ -18,7 +79,6 @@
     }
 
     .header .mobile_version .find {
-        display: none;
         border: none;
         background-color: #7ac751;
         color: #ffffff;
@@ -33,13 +93,27 @@
     }
 
     .header .mobile_version .find_container {
-        /*display: none;*/
-        display: flex;
+        display: none;
+        /*display: flex;*/
     }
 
-    .header .mobile_version .find_container {
-        /*display: flex;*/
+    .header .mobile_version .find_container.active {
+        display: flex;
         /*align-items: center;*/
+    }
+}
+
+@media (max-width: 600px){
+    .header_top .header_top_inner {
+        justify-content: center;
+    }
+
+    .header_top .header_top_left {
+        display: none;
+    }
+
+    .header_top .account {
+        justify-content: center;
     }
 }
 
@@ -51,9 +125,14 @@
         gap: 20px;
     }
 
-    .header .mobile_version .find {
-        display: none;
+    .header .header_right.mobile_version {
+        align-self: end;
     }
+
+    .features .features_list {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 400px) {
