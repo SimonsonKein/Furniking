@@ -194,8 +194,37 @@ body{
     display: flex;
     gap: 20px;
     font-size: 25px;
-    color: #2c2c2c;
+    color: #555555;
+}
 
+.header .header_right div {
+    padding: 5px;
+    /*transition: background-color .3s ease;*/
+    /*border-radius: 7px;*/
+    /*background-size: 5px 100%;*/
+    position: relative;
+    transition: .3s color ease;
+
+}
+
+.header .header_right div:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 100%;
+    background-color: #7ac751;
+    z-index: -1;
+    transition: .3s width ease;
+    border-radius: 10px;
+}
+.header .header_right div:hover {
+    color: #ffffff;
+}
+.header .header_right div:hover:before {
+    width: 100%;
 }
 
 .header .mobile_version {

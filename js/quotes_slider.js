@@ -3,7 +3,7 @@ let itemsCount = document.querySelectorAll(".quotes_item").length
 let posActiveItem = 3, posLeftItem, posRightItem
 let oldPosActive, oldPosLeftActive, oldPosRightActive
 
-// document.querySelector(".quotes_slider_item").addEventListener("transitionend", showMessage, false)
+// document.querySelector(".quotes_item").addEventListener("transitionend", showMessage, false)
 initList();
 // function showMessage() {
 //     alert('s')
