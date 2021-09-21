@@ -20,6 +20,10 @@
         margin: 0;
     }
 
+    .nav .menu_list {
+        background-color: #ffffff;
+    }
+
     .nav .menu_item {
         border: none;
         border-bottom: 1px #E3E3E3 solid;
@@ -100,6 +104,28 @@
         flex-direction: column;
         align-items: start;
     }
+
+    .our_products .our_products_list {
+        justify-content: center;
+    }
+
+    .quotes .quotes_item {
+        flex-basis: 100%;
+    }
+
+    .articles .articles_list {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .articles .article_item {
+        width: 70%;
+    }
+
+    .articles .article_title{
+        font-size: 20px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 770px) {
@@ -138,6 +164,32 @@
         /*background-position: left top;*/
         padding-bottom: 100px;
     }
+
+    .quotes .title {
+        font-size: 30px;
+    }
+
+    .quotes .quote_arrow_left,
+    .quotes .quote_arrow_right {
+        height: 40px;
+        width: 40px;
+        font-size: 30px;
+    }
+
+    .quotes .quote_content {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .quotes .quote_author {
+        font-size: 20px;
+    }
+
+    .footer_nav .nav_list {
+        flex-direction: column;
+        /*align-items: center;*/
+        justify-content: center;
+    }
 }
 
 @media (max-width: 600px){
@@ -155,6 +207,23 @@
 
     .special_offer .special_offer_content  {
         width: 60%;
+    }
+
+    #about {
+        width: 100%;
+    }
+
+    .footer_nav .nav_description {
+        padding-right: 20px;
+    }
+
+    .footer  .footer_inner {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .articles .article_item {
+        width: 100%;
     }
 }
 
@@ -174,6 +243,19 @@
         flex-direction: column;
     }
     .special_offer .special_offer_time_item {
+    }
+
+    .quotes .container {
+        padding: 0;
+    }
+
+    .articles .article_info {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .articles .article_read_more_btn  {
+        margin-top: 20px;
     }
 }
 
@@ -195,5 +277,9 @@
         /*background-position: left top;*/
         background-size: 100% 100%;
         padding-bottom: 20px;
+    }
+
+    .special_offer .special_offer_time {
+        justify-content: start;
     }
 }

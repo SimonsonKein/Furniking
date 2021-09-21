@@ -1,0 +1,39 @@
+.quotes_list {
+    margin: auto;
+    list-style: none;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.quotes_item {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
+    z-index: 0;
+    background-color: #ffffff;
+}
+
+.slider_left {
+    transform: translateX(-100%);
+}
+
+.slider_right {
+    transform: translateX(100%);
+}
+
+.slider_active {
+    transform: translateX(0);
+}
+
+.quotes .slider_display_none {
+    z-index: -10;
+    display: none;
+}
