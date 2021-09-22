@@ -14,13 +14,6 @@ function initList() {
     posRightItem = getPosition(true);
     addClasses()
 }
-/*
-document.getElementById("quotes_list").onclick = evt =>{
-    // if (transEnd) {
-    // transEnd = false
-    list(true)
-    // }
-}*/
 
 document.getElementById("left_arrow").onclick = ev => {
     list(false)
