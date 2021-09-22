@@ -29,67 +29,7 @@ function list(listToNext) {
 }
 
 function replaceClasses(listToNext, itemCount) {
-    if (itemCount === 1) {
-
-    } else if (itemsCount === 2) {
-
-    } else if (itemsCount === 3) {
-        let i = 0
-        let z_indexClassName
-        if (listToNext) {
-            z_indexClassName = "z_index_min"
-        } else {
-            z_indexClassName = "z_index_max"
-        }
-        if (listToNext) {
-            document.querySelectorAll(".quotes_item").forEach(function (item) {
-                i++
-                if (i === posLeftItem) {
-                    item.classList.add("z_index_min")
-                    item.classList.remove("z_index_max")
-                    /*if (item.classList.contains("z_index_min")) {
-                        item.classList.remove("z_index_min")
-                    } else if (item.classList.contains("z_index_max")) {
-                        item.classList.remove("z_index_max")
-                    }*/
-                    item.classList.replace("slider_left", "slider_right")
-                } else if (i === posActiveItem) {
-                    if (item.classList.contains("z_index_min")) {
-                        item.classList.remove("z_index_min")
-                    } else if (item.classList.contains("z_index_max")) {
-                        item.classList.remove("z_index_max")
-                    }
-                } else if (i === posRightItem) {
-                    item.classList.remove("z_index_min")
-                    item.classList.add("z_index_max")
-                }
-            })
-        }
-        if (listToNext) {
-            let i = 0
-            document.querySelectorAll(".quotes_item").forEach(function (item) {
-                i++;
-                if (i === oldPosLeftActive) {
-                    item.classList.replace("slider_left", "slider_right")
-                } else if (i === oldPosActive) {
-                    item.classList.replace("slider_active", "slider_left")
-                } else if (i === oldPosRightActive) {
-                    item.classList.replace("slider_right", "slider_active")
-                }
-            })
-        } else {
-            document.querySelectorAll(".quotes_item").forEach(function (item) {
-                i++;
-                if (i === oldPosLeftActive) {
-                    item.classList.replace("slider_left", "slider_active")
-                } else if (i === oldPosActive) {
-                    item.classList.replace("slider_active", "slider_right")
-                } else if (i === oldPosRightActive) {
-                    item.classList.replace("slider_right", "slider_left")
-                }
-            })
-        }
-    } else if (itemCount > 3) {
+    if (listToNext) {
         let i = 0
         if (listToNext) {
             document.querySelectorAll(".quotes_item").forEach(function (item) {
@@ -120,7 +60,6 @@ function replaceClasses(listToNext, itemCount) {
         }
     }
 }
-
 function addClasses() {
     let i = 0;
     document.querySelectorAll(".quotes_item").forEach(function (item) {
@@ -141,7 +80,7 @@ function addClasses() {
 function getPosition(goNext) {
     let currentPosition = posActiveItem
     if (goNext) {
-        if (currentPosition < itemsCount)  {
+        if (currentPosition < itemsCount) {
             return ++currentPosition
         } else {
             return 1;
