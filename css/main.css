@@ -192,10 +192,16 @@ body{
 
 .header .header_right {
     display: flex;
-    gap: 20px;
-    font-size: 25px;
-    color: #2c2c2c;
+}
 
+.header .header_right.laptop_version > div {
+    margin: 0 10px;
+    height: 26px;
+    width: 26px;
+}
+
+.header .header_right.laptop_version > div:last-child {
+    margin-right: 0;
 }
 
 .header .mobile_version {
